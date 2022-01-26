@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+body {
+    font-family: 'Inter', sans-serif;
+    margin: auto;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #ffffff;
+    padding: 30px;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+img {
+    float: left;
+    padding-left: 20px;
+}
+
+.header-right {
+    float: right;
+}
+
+.login_link,
+.home_link {
+    text-decoration: none;
+    padding: 20px;
+}
+
+#loginbtn {
+    background: rgb(253, 210, 144);
+    background: linear-gradient(90deg, #51BDC7 0%, #8AA6FA 100%);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 75px;
+    width: 100px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.bod1 {
+    text-align: center;
+    padding-top: 100px;
+    font-size: 25px;
+    display: relative;
+}
+
+.img_container {
+    float: right;
+    position: relative;
+}
+
+#bhand {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    right: 250px;
+}
+
+.img_container2 {
+    position: relative;
+}
+
+#rhand {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 250px;
+    left: 250px;
+}
+
+#btn {
+    background: rgb(253, 210, 144);
+    background: linear-gradient(90deg, rgba(253, 210, 144, 1) 0%, rgba(253, 168, 144, 1) 100%);
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    border: none;
+    border-radius: 75px;
+    width: 200px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+}
+
+#btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#btn span:after {
+    content: '\2192';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -5px;
+    transition: 0.5s;
+}
+
+#btn:hover span {
+    padding-right: 20px;
+}
+
+#btn:hover span:after {
+    opacity: 100;
+    right: 0;
+}
+
+.bod2 {
+    margin: 15% 5% 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    margin-left: 5%;
+}
+
+.text h1 {
+    font-size: 40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#rdmebtn {
+    background: #fce7c7;
+    color: #fc734e;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    width: 160px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+}
+
+#rdmebtn span a {
+    color: #fc734e;
+}
+
+#rdmebtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+#rdmebtn span:after {
+    content: '\2192';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -5px;
+    transition: 0.5s;
+}
+
+#rdmebtn:hover span {
+    padding-right: 20px;
+}
+
+#rdmebtn:hover span:after {
+    opacity: 100;
+    right: 0;
+}
+
+.bod3 {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table_container p {
+    align-items: left;
+}
+
+#tb1 {
+    border: 1px solid rgb(238, 232, 232);
+    border-radius: 15px;
+    padding: 10px;
+    width: 100%;
+    gap: 1rem;
+    display: flex;
+}
+
+#tb2 tr td {
+    border: 1px solid rgb(238, 232, 232);
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    gap: 1rem;
+}
+
+#tb2 {
+    border-spacing: 0 20px;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+#tb3 {
+    border: 1px solid rgb(238, 232, 232);
+    border-radius: 15px;
+    padding: 10px;
+    width: 100%;
+    gap: 1rem;
+    display: flex;
+}
+
+#tb3 tr td {
+    text-align: center;
+    vertical-align: middle;
+    color: slategray;
+}
+
+.login_link2 {
+    text-decoration: none;
+    color: slategray;
+}
+
+.footer {
+    position: absolute;
+    padding: 20px;
+    left: 0;
+    right: 0;
+    background-color: #51BDC7;
+    color: white;
+    text-align: center;
+}
+
+.github-link {
+    text-decoration: none;
+    color: white;
+}
