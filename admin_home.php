@@ -1,12 +1,4 @@
-<?php
-    require ("db_con.php"); 
-    if(!isset($_SESSION["type"]))
-        {
-            header("location:login.php");
-        }
-        ?>
-
-
+<?php session_start(); ?>
 
 <head>
     <meta charset="UTF-8">
@@ -24,10 +16,11 @@
         <img src="images\Logo.png" width="150px" height="30px">
 
             <div class="header-right">
-                <a href="index.php" class="home_link">Home</a>
-                    <a href="login.php" class="login_link">
-                        <button type="submit" id="loginbtn">Log in</button>
-                    </a>
+                <a href="admin_home.php">Home</a>
+                <a href="admin_profile.php">Profile</a>
+                <a href="admin_panel.php">
+                    <button id="loginbtn">Admin Panel</button>
+                </a>
             </div>
     </div>
 

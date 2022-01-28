@@ -28,6 +28,9 @@
       </div>
 
       <div class="info">
+        <!-- Dear Backend, placeholder lang ni ang sa text, exchange it for the values nga ara sa database
+            delete this comment kung ma islan niyo na.
+         -->
         <div class="text">
             <p>January 1, 2022 by Zenrick Parcon</p>
             <h1>How to apply in <br> Adonis Gay Bar</br></h1>

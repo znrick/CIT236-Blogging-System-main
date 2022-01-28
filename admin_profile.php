@@ -1,12 +1,10 @@
-<?php
-    require ("db_con.php");
-    ?>
+<?php session_start(); ?>
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bulag | Admin View Profile</title>
+    <title>Bulag | Admin Profile</title>
     <link rel="stylesheet" href="styles/admin.css">
 </head>
 
@@ -21,28 +19,10 @@
                 </a>
             </div>
     </div>
-<!--
-    <div class="container"> 
-		<form name="update" action="#" method="POST" class="inputs">
-            <input type = "hidden" id = "userID" name = "userID" value="<?= $user['userID']; ?>" required/>
-            <p>Username:</p>
-            <input type = "text" id = "username" name = "username" placeholder="Enter Username" value="<?=  $user['username']; ?>" required/>
-            <p>Email:</p>
-            <input type="email" id="email" name="email" placeholder="Enter Email" value="<?=$user['email']; ?>" required />
-            <p>Password:</p>
-            <input type = "password" id="password" name = "password" placeholder="Enter password" value="<?=$user['password'];  ?>" required/> 
-            
-			<div class="btns">
-				<input class="btn" type="submit" value="Update" id="submit" name="update" />
-				<a href="showUsers.php"><button class="btn-light">Back</button></a>
-			</div>
-		</form>
-	</div>-->
 
    <div class="body-container">
-    <form name="update" action="update_save.php" method="POST">
         <div class="profile-container">
-            <h1>View Profile</h1>
+            <h1>Your Profile</h1>
             <div class="container">
                 <form name="update" action="#" method="POST" class="inputs">
                     <input type = "hidden" id = "userId" name = "userId" value="" required/>
@@ -54,8 +34,31 @@
                     <input type = "password" id="password" name = "password" placeholder="Enter password" value="" required/> 
                     
                     <div class="btns">
-                        <a href="admin_panel.php" class="btn-light">Back</a>
-                        <input class="btn" type="submit" value="Update" id="submit" name="update" />
+                        <div class="menu-container">
+                            <div id="menu">
+                                <input type="checkbox" id="menu-toggle"/>
+                                <ul>
+                                    <!-- Ang sa sulod sang span ga depend tani sa status sang user, kung active or inactive -->
+                                    <li>
+                                        <button class="btn-status">Set as <span> active</span></button>
+                                    </li>
+
+                                    <li>
+                                        <button class="btn-admin">Set as admin</button>
+                                    </li>
+
+                                    <li>
+                                        <form name="block" action="block.php" method="POST"></form>
+
+                                        <button class="btn-block"><span>Block</span></button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="admin_panel.php" class="btn-light">Back</a>
+                            <input class="btn" type="submit" value="Update" id="submit" name="update" />
+                        </div>
                     </div>
                 </form>
             </div>
