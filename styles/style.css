@@ -21,11 +21,6 @@ img {
     float: right;
 }
 
-.header-right a {
-    text-decoration: none;
-    padding: 20px;
-}
-
 .login_link,
 .home_link {
     text-decoration: none;
@@ -39,7 +34,7 @@ img {
     padding: 10px;
     border: none;
     border-radius: 75px;
-    width: 130px;
+    width: 100px;
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     cursor: pointer;

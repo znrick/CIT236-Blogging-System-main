@@ -10,8 +10,9 @@ $saveUser->bindparam(':email', $_POST['email']);
 $saveUser->execute();
 
 echo "
-			<script>
-				alert ('Welcom User');
-			</script> ";
-			header('Location: admin_panel.php');
+<script>
+alert ('New User Added');
+window.opener.location.replace('index.php');
+</script>
+";
 ?>

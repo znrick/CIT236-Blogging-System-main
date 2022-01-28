@@ -1,12 +1,4 @@
-<?php
-    require ("db_con.php"); 
-    if(!isset($_SESSION["type"]))
-        {
-            header("location:login.php");
-        }
-        ?>
-
-
+<?php session_start(); ?>
 
 <head>
     <meta charset="UTF-8">

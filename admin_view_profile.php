@@ -14,17 +14,17 @@
     <div class="header">
         <img src="images/Logo.png" width="150px" height="30px">
             <div class="header-right">
-                <a href="admin_home.php">Home</a>
-                <a href="admin_profile.php">Profile</a>
+                <a href="index.php">Home</a>
+                <a href="index.php">Profile</a>
                 <a href="admin_panel.php">
                     <button id="loginbtn">Admin Panel</button>
                 </a>
             </div>
     </div>
-<!--
-    <div class="container"> 
+
+    <!-- <div class="container">
 		<form name="update" action="#" method="POST" class="inputs">
-            <input type = "hidden" id = "userID" name = "userID" value="<?= $user['userID']; ?>" required/>
+            <input type = "hidden" id = "userId" name = "userId" value="<?= $user['userId']; ?>" required/>
             <p>Username:</p>
             <input type = "text" id = "username" name = "username" placeholder="Enter Username" value="<?=  $user['username']; ?>" required/>
             <p>Email:</p>
@@ -37,10 +37,9 @@
 				<a href="showUsers.php"><button class="btn-light">Back</button></a>
 			</div>
 		</form>
-	</div>-->
+	</div> -->
 
    <div class="body-container">
-    <form name="update" action="update_save.php" method="POST">
         <div class="profile-container">
             <h1>View Profile</h1>
             <div class="container">
